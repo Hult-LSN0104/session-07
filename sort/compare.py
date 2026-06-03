@@ -42,13 +42,13 @@ def compare_sorting_algorithms(arr_size=1000):
 
     # Test cases to try - read from files with fallback to generated arrays
     test_arrays = {
-        "Random": read_array_from_file("/workspaces/session-7/sort/to_test/random5000.txt"),  # <—— CHANGE THESE FILE NAMES
-        "Already Sorted": read_array_from_file("/workspaces/session-7/sort/to_test/sorted5000.txt"),  # <—— CHANGE THESE FILE NAMES
-        "Reverse Sorted": read_array_from_file("/workspaces/session-7/sort/to_test/reversed5000.txt")  # <—— CHANGE THESE FILE NAMES
+        "Random": read_array_from_file("/Users/ctoddlombardo/Dropbox/_Hult/Courses/CM-3/code/files_to_test/random50000.txt"),
+        "Already Sorted": read_array_from_file("/Users/ctoddlombardo/Dropbox/_Hult/Courses/CM-3/code/files_to_test/sorted50000.txt"),
+        "Reverse Sorted": read_array_from_file("/Users/ctoddlombardo/Dropbox/_Hult/Courses/CM-3/code/files_to_test/reversed50000.txt")
     }
     
     # Dictionary to store all sorting functions
-    sorting_functions = {
+    sorting_functions =
         "Sort 1": SortingAlgorithms().sort_one,
         "Sort 2": SortingAlgorithms().sort_two,
         "Sort 3": SortingAlgorithms().sort_three,
@@ -73,12 +73,12 @@ def compare_sorting_algorithms(arr_size=1000):
 
 def main():
     results = compare_sorting_algorithms()
-"""     print("\nResults:")
-    print("-" * 50)
+    print("\nResults:")
+    print("-" * 40)
     for array_type, timing_data in results.items():
         print(f"\n{array_type} array:")
         for sort_name, time_taken in timing_data.items():
             print(f"{sort_name}: {time_taken:.4f} seconds")
- """
+
 if __name__ == "__main__":
     main()
